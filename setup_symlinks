@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Update this script as needed 
+
+ln -svf ~/Documents/Projects/geek_stuff/dotfiles/shell/.bash_profile ~
+ln -svf ~/Documents/Projects/geek_stuff/dotfiles/shell/.aliases ~

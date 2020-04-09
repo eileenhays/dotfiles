@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# general tool aliases
+alias mv='mv -iv' # safe mv (asks before overwrite, verbose)
+alias mkdir='mkdir -p' # make parent dirs as needed
+alias ll='ls -lh' # detailed ls
+alias la='ls -a' # list all
+
+alias grep='grep --color=auto'
+
+# shortcuts
+alias sbp='source ~/.bash_profile; echo ".bash_profile udpated"'
+
+# fun/useful-ish
+
+# Lock the screen (when going AFK)
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
