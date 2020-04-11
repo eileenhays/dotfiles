@@ -6,6 +6,8 @@ alias mkdir='mkdir -p' # make parent dirs as needed
 alias ll='ls -lh' # detailed ls
 alias la='ls -a' # list all
 
+alias cp='cp -iv' # safe cp (asks before overwrite, verbose)
+
 alias grep='grep --color=auto'
 
 # shortcuts

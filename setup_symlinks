@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-ln -svf ./shell/.bash_profile ~
-ln -svf ./shell/.aliases ~
-ln -svf ./shell/.git-completion.bash ~
+echo "Setting up symlinks in ~/ for all the dotfiles"
 
-ln -svf ./shell/.zshrc ~
+ln -svf $(pwd)/shell/.bash_profile ~
+ln -svf $(pwd)/shell/.aliases ~
+ln -svf $(pwd)/shell/.git-completion.bash ~
+
+ln -svf $(pwd)/shell/.zshrc ~
 # Vim config
-ln -svf ./.vimrc ~
+ln -svf $(pwd)/.vimrc ~
