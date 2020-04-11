@@ -8,6 +8,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+if [ -f ~/.local_passwords ]; then
+  . ~/.local_passwords
+fi
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 

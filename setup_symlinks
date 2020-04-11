@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# Update this script as needed 
+ln -svf ./shell/.bash_profile ~
+ln -svf ./shell/.aliases ~
+ln -svf ./shell/.git-completion.bash ~
 
-ln -svf ~/Documents/Projects/geek_stuff/dotfiles/shell/.bash_profile ~
-ln -svf ~/Documents/Projects/geek_stuff/dotfiles/shell/.aliases ~
+ln -svf ./shell/.zshrc ~
+# Vim config
+ln -svf ./.vimrc ~

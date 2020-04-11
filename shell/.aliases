@@ -9,7 +9,8 @@ alias la='ls -a' # list all
 alias grep='grep --color=auto'
 
 # shortcuts
-alias sbp='source ~/.bash_profile; echo ".bash_profile udpated"'
+alias sbp='source ~/.bash_profile; echo ".bash_profile updated"'
+alias szrc='source ~/.zshrc; echo ".zshrc updated"'
 
 # fun/useful-ish
 
