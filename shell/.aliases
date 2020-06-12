@@ -10,6 +10,24 @@ alias cp='cp -iv' # safe cp (asks before overwrite, verbose)
 
 alias grep='grep --color=auto'
 
+# Usage: mv oldfilename
+# If you call mv without the second parameter it will prompt you to edit the filename on command line.
+# Original mv is called when it's called with more than one argument.
+# It's useful when you want to change just a few letters in a long name.
+function imv() {
+  if [ "$#" -ne 1 ]; then
+    command mv "$@"
+    return
+  fi
+  if [ ! -f "$1" ]; then
+    command file "$@"
+    return
+  fi
+
+  read -ei "$1" newfilename
+  mv -v "$1" "$newfilename"
+}
+
 # shortcuts
 alias sbp='source ~/.bash_profile; echo ".bash_profile updated"'
 alias szrc='source ~/.zshrc; echo ".zshrc updated"'
