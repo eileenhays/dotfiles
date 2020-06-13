@@ -1,0 +1,29 @@
+# pathogen.vim
+# https://github.com/tpope/vim-pathogen
+
+echo "Installing pathogen.vim"
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+echo "pathogen.vim installed"
+
+# NerdTree
+# https://github.com/preservim/nerdtree
+
+echo "Installing NerdTree"
+git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
+echo "NerdTree installed"
+
+# ctrlp.vim
+# https://github.com/kien/ctrlp.vim
+
+echo "Installing ctrlp.vim"
+git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+echo "ctrlp.vim installed"
+
+# jellybeans
+# https://github.com/nanotech/jellybeans.vim
+
+echo "Installing jellybeans color scheme"
+mkdir -p ~/.vim/colors
+curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim ~/.vim/colors/jellybeans.vim
+echo "jellybeans installed"
