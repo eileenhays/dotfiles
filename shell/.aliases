@@ -37,3 +37,5 @@ alias szrc='source ~/.zshrc; echo ".zshrc updated"'
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# display saved wifi password (need to add grep to the end here...)
+alias wifipw="security find-generic-password -ga $1"
