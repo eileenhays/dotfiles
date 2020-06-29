@@ -3,6 +3,7 @@
 export PATH=/usr/local:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATh=$PATH:~/bin
+export PATH=$PATH:~/github/github/bin
 
 eval "$(rbenv init -)"
 
@@ -13,6 +14,10 @@ source ~/.aliases
 
 if [ -f ~/.local_passwords ]; then
   . ~/.local_passwords
+fi
+
+if [ -f ~/.local_profile ]; then
+  . ~/.local_profile
 fi
 
 # Set name of the theme to load --- if set to "random", it will
