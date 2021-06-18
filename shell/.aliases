@@ -28,6 +28,9 @@ function imv() {
   mv -v "$1" "$newfilename"
 }
 
+alias makex='chmod u+x'
+alias quickserver='python3 -m http.server 8000'
+
 # shortcuts
 alias sbp='source ~/.bash_profile; echo ".bash_profile updated"'
 alias szrc='source ~/.zshrc; echo ".zshrc updated"'
