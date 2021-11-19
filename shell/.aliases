@@ -41,4 +41,10 @@ alias szrc='source ~/.zshrc; echo ".zshrc updated"'
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # display saved wifi password (need to add grep to the end here...)
-alias wifipw="security find-generic-password -ga $1"
+
+function wifipw() {
+  ssid=$(/System/Library/PrivateFrameworks/Apple80211.framework/Resources/airport -I | awk -F: '/ SSID/{print $2}')
+  echo "network: ${ssid}"
+  security find-generic-password -ga $(echo "${ssid}") | awk -F: '/ password:/{print $2}'
+}
+#alias wifipw="security find-generic-password -ga $1"

@@ -6,6 +6,12 @@ export PATh=$PATH:~/bin
 export PATH=$PATH:~/github/github/bin
 
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
+
+
+if [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dave/.oh-my-zsh"
@@ -86,7 +92,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  macos
   ruby
 )
 
@@ -117,3 +123,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
