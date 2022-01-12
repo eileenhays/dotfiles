@@ -1,11 +1,12 @@
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:$PATH"
 export PATH=/usr/local:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATh=$PATH:~/bin
-export PATH=$PATH:~/github/github/bin
 
-eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
 
@@ -14,7 +15,7 @@ if [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]; then
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dave/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 source ~/.aliases
 
@@ -93,7 +94,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
   macos
-  ruby
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -2,9 +2,7 @@
 
 echo "Setting up symlinks in ~/ for all the dotfiles"
 
-ln -svf $(pwd)/shell/.bash_profile ~
 ln -svf $(pwd)/shell/.aliases ~
-ln -svf $(pwd)/shell/.git-completion.bash ~
 
 ln -svf $(pwd)/shell/.zshrc ~
 # Vim config
